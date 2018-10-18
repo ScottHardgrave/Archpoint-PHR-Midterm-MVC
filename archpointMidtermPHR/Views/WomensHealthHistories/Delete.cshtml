@@ -1,0 +1,225 @@
+﻿@model archpointMidtermPHR.Models.WomensHealthHistory
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>WomensHealthHistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLastClinicialBreastExam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateLastClinicialBreastExam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ResultsLastBreastExam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ResultsLastBreastExam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateNextBreastExam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateNextBreastExam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLastMammogram)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateLastMammogram)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ResultsLastMammogram)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ResultsLastMammogram)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateNextMammogram)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateNextMammogram)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLastPapExam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateLastPapExam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ResultsLastPapExam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ResultsLastPapExam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateNextPapExam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateNextPapExam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WomensDiseaseDisorder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WomensDiseaseDisorder)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfDiagnosis)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateOfDiagnosis)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WomensDiseaseDisorderStatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WomensDiseaseDisorderStatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateResolved)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateResolved)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WomensHealthSurgeryProcedure)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WomensHealthSurgeryProcedure)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfSurgeryProcedure)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateOfSurgeryProcedure)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AgePeriodsStarted)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AgePeriodsStarted)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PeriodsRegular)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PeriodsRegular)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PeriodProblems)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PeriodProblems)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PeriodFlow)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PeriodFlow)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StillHavingPeriods)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StillHavingPeriods)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthControlMethod)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BirthControlMethod)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HormoneReplacementTherapy)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HormoneReplacementTherapy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HrtDateStarted)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HrtDateStarted)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HrtDateStopped)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HrtDateStopped)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumOfPregnancies)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumOfPregnancies)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumOfLiveBirths)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumOfLiveBirths)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumOfPrematureBirths)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumOfPrematureBirths)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumOfStillBirths)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumOfStillBirths)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumOfMiscarriages)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumOfMiscarriages)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumOfCsections)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumOfCsections)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumOfElectiveAbortions)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumOfElectiveAbortions)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PregnancyComplications)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PregnancyComplications)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedCareLocation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedCareLocation.LocationCity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedCareProvider)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedCareProvider.ActiveOrInactive)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="WomensHealthHistoryId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

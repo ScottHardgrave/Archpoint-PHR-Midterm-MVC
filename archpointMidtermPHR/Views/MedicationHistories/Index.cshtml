@@ -1,0 +1,125 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.MedicationHistory>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MedicationName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedStrength)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedDosage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedFrequency)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConditionBeingTreated)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DrugStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateStarted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateStopped)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PharmacyUsed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PharmacyNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrescriptionNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Refills)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OtcDrugs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VitaminsAndSupplements)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CommentsDirections)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedProvider)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedicationName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedStrength)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedDosage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedFrequency)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConditionBeingTreated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DrugStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateStarted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateStopped)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PharmacyUsed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PharmacyNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrescriptionNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Refills)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OtcDrugs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VitaminsAndSupplements)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommentsDirections)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedProvider.ActiveOrInactive)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MedicationId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MedicationId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MedicationId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,107 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.EmergencyContact>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PrimaryOrSecondaryContact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmerContactFirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmerContactLastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RelationshipToPatient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmerContactDayPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmerContactEveningPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmerContactCellPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmerContactEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmerContactStreetAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmerContactCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmerContactStateProvince)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmerContactZip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmerContactCountry)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrimaryOrSecondaryContact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmerContactFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmerContactLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RelationshipToPatient)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmerContactDayPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmerContactEveningPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmerContactCellPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmerContactEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmerContactStreetAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmerContactCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmerContactStateProvince)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmerContactZip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmerContactCountry)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EmergencyContactId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EmergencyContactId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EmergencyContactId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,58 @@
+﻿@model archpointMidtermPHR.Models.InsurancePolicyHolder
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>InsurancePolicyHolder</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PolicyHolderFirstName" class="control-label"></label>
+                <input asp-for="PolicyHolderFirstName" class="form-control" />
+                <span asp-validation-for="PolicyHolderFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PolicyHolderMidInit" class="control-label"></label>
+                <input asp-for="PolicyHolderMidInit" class="form-control" />
+                <span asp-validation-for="PolicyHolderMidInit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PolicyHolderLastName" class="control-label"></label>
+                <input asp-for="PolicyHolderLastName" class="form-control" />
+                <span asp-validation-for="PolicyHolderLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RealtionshipToPolicyHolder" class="control-label"></label>
+                <input asp-for="RealtionshipToPolicyHolder" class="form-control" />
+                <span asp-validation-for="RealtionshipToPolicyHolder" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfBirth" class="control-label"></label>
+                <input asp-for="DateOfBirth" class="form-control" />
+                <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PolicyHolderSsn" class="control-label"></label>
+                <input asp-for="PolicyHolderSsn" class="form-control" />
+                <span asp-validation-for="PolicyHolderSsn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

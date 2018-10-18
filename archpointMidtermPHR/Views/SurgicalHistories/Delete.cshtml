@@ -1,0 +1,57 @@
+﻿@model archpointMidtermPHR.Models.SurgicalHistory
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SurgicalHistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SurgeryProcedure)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SurgeryProcedure)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfSurgeryProcedure)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateOfSurgeryProcedure)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProblemWithAnesthesia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProblemWithAnesthesia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AnesthesiaProblemExplanation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AnesthesiaProblemExplanation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedCareLocation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedCareLocation.LocationCity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedProvider)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedProvider.ActiveOrInactive)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="SurgeryHistoryId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

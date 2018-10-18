@@ -1,0 +1,95 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.CholesterolRisk>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DateCholTaken)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalCholesterol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LdlCholesterol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HdlCholesterol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Triglycerides)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TakenAfterFasting)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalCholGoal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LdlCholGoal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HdlCholGoal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TriglycerideGoal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comments)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateCholTaken)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCholesterol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LdlCholesterol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HdlCholesterol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Triglycerides)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TakenAfterFasting)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCholGoal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LdlCholGoal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HdlCholGoal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TriglycerideGoal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CholesterolRiskId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CholesterolRiskId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CholesterolRiskId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

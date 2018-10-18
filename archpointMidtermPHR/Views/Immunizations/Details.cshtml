@@ -1,0 +1,48 @@
+﻿@model archpointMidtermPHR.Models.Immunizations
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Immunizations</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ImmunizationType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ImmunizationType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateReceived)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateReceived)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AdministeredBy)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AdministeredBy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLastTetanus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateLastTetanus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ImmunizationId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,129 @@
+﻿@model archpointMidtermPHR.Models.MensHealth
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>MensHealth</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLastAnnualPhysical)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateLastAnnualPhysical)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateNextAnnualPhysical)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateNextAnnualPhysical)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FamilyHistoryProstateCancer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FamilyHistoryProstateCancer)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLastProstateExam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateLastProstateExam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastProstateExamResults)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastProstateExamResults)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateNextProstateExam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateNextProstateExam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLastPsa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateLastPsa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastPsaresults)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastPsaresults)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PsaLevelTestNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PsaLevelTestNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateNextPsatest)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateNextPsatest)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLastFecalOccultTest)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateLastFecalOccultTest)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FecalOccultResults)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FecalOccultResults)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateNextFecalOccultTest)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateNextFecalOccultTest)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLastSigmoidColonoscopyExam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateLastSigmoidColonoscopyExam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SigmoidColonoscopyResults)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SigmoidColonoscopyResults)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateNextSigmoidColonoscopy)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateNextSigmoidColonoscopy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MensHealthIssues)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MensHealthIssues)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MensHealthHistoryId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

@@ -1,0 +1,48 @@
+﻿@model archpointMidtermPHR.Models.A1cTestRisk
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>A1cTestRisk</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateEntered)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateEntered)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTested)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateTested)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.A1cTestResults)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.A1cTestResults)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.A1cTargetRangeGoal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.A1cTargetRangeGoal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.A1cTestRiskId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,233 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.WomensHealthHistory>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DateLastClinicialBreastExam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResultsLastBreastExam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateNextBreastExam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateLastMammogram)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResultsLastMammogram)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateNextMammogram)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateLastPapExam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResultsLastPapExam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateNextPapExam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WomensDiseaseDisorder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfDiagnosis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WomensDiseaseDisorderStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateResolved)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WomensHealthSurgeryProcedure)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfSurgeryProcedure)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgePeriodsStarted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PeriodsRegular)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PeriodProblems)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PeriodFlow)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StillHavingPeriods)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BirthControlMethod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HormoneReplacementTherapy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HrtDateStarted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HrtDateStopped)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumOfPregnancies)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumOfLiveBirths)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumOfPrematureBirths)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumOfStillBirths)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumOfMiscarriages)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumOfCsections)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumOfElectiveAbortions)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PregnancyComplications)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedCareLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedCareProvider)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateLastClinicialBreastExam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResultsLastBreastExam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateNextBreastExam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateLastMammogram)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResultsLastMammogram)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateNextMammogram)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateLastPapExam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResultsLastPapExam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateNextPapExam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WomensDiseaseDisorder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfDiagnosis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WomensDiseaseDisorderStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateResolved)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WomensHealthSurgeryProcedure)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfSurgeryProcedure)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgePeriodsStarted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PeriodsRegular)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PeriodProblems)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PeriodFlow)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StillHavingPeriods)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BirthControlMethod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HormoneReplacementTherapy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HrtDateStarted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HrtDateStopped)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumOfPregnancies)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumOfLiveBirths)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumOfPrematureBirths)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumOfStillBirths)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumOfMiscarriages)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumOfCsections)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumOfElectiveAbortions)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PregnancyComplications)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedCareLocation.LocationCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedCareProvider.ActiveOrInactive)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.WomensHealthHistoryId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.WomensHealthHistoryId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.WomensHealthHistoryId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,89 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.AlcoholRiskId>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DrinkAlc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DailyDrinkCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WeekendDrinkCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SocialDrinkCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YearsQuitDrinking)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TreatedForAlcAbuse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YearTreated)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LengthOfTreatment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypeOfTreatment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comments)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DrinkAlc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DailyDrinkCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WeekendDrinkCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SocialDrinkCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YearsQuitDrinking)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TreatedForAlcAbuse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YearTreated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LengthOfTreatment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypeOfTreatment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AlcoholUseRiskId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AlcoholUseRiskId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AlcoholUseRiskId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

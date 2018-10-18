@@ -1,0 +1,96 @@
+﻿@model archpointMidtermPHR.Models.EmergencyContact
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EmergencyContact</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimaryOrSecondaryContact)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrimaryOrSecondaryContact)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactFirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactFirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactLastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactLastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RelationshipToPatient)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RelationshipToPatient)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactDayPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactDayPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactEveningPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactEveningPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactCellPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactCellPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactEmail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactEmail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactStreetAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactStreetAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactCity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactCity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactStateProvince)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactStateProvince)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactZip)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactZip)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactCountry)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactCountry)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.EmergencyContactId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

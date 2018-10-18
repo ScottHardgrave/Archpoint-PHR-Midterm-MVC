@@ -1,0 +1,48 @@
+﻿@model archpointMidtermPHR.Models.HospitalAdmitCard
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HospitalAdmitCard</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PatientId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployerId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmployerId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmergencyContactId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmergencyContactId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.InsuranceId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.InsuranceId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PolicyHolderId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PolicyHolderId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.HospitalAdmitId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

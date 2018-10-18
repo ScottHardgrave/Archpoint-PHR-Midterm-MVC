@@ -1,0 +1,83 @@
+﻿@model archpointMidtermPHR.Models.CholesterolRisk
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>CholesterolRisk</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DateCholTaken" class="control-label"></label>
+                <input asp-for="DateCholTaken" class="form-control" />
+                <span asp-validation-for="DateCholTaken" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalCholesterol" class="control-label"></label>
+                <input asp-for="TotalCholesterol" class="form-control" />
+                <span asp-validation-for="TotalCholesterol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LdlCholesterol" class="control-label"></label>
+                <input asp-for="LdlCholesterol" class="form-control" />
+                <span asp-validation-for="LdlCholesterol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HdlCholesterol" class="control-label"></label>
+                <input asp-for="HdlCholesterol" class="form-control" />
+                <span asp-validation-for="HdlCholesterol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Triglycerides" class="control-label"></label>
+                <input asp-for="Triglycerides" class="form-control" />
+                <span asp-validation-for="Triglycerides" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TakenAfterFasting" class="control-label"></label>
+                <input asp-for="TakenAfterFasting" class="form-control" />
+                <span asp-validation-for="TakenAfterFasting" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalCholGoal" class="control-label"></label>
+                <input asp-for="TotalCholGoal" class="form-control" />
+                <span asp-validation-for="TotalCholGoal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LdlCholGoal" class="control-label"></label>
+                <input asp-for="LdlCholGoal" class="form-control" />
+                <span asp-validation-for="LdlCholGoal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HdlCholGoal" class="control-label"></label>
+                <input asp-for="HdlCholGoal" class="form-control" />
+                <span asp-validation-for="HdlCholGoal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TriglycerideGoal" class="control-label"></label>
+                <input asp-for="TriglycerideGoal" class="form-control" />
+                <span asp-validation-for="TriglycerideGoal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <input asp-for="Comments" class="form-control" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

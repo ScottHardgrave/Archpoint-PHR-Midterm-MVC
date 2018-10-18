@@ -1,0 +1,59 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.TestsExams>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TestExamType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TestExamResult)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfTestExam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReaonForTestExam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedCareLocation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TestExamType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TestExamResult)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfTestExam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReaonForTestExam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedCareLocation.LocationCity)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TestExamId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.TestExamId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.TestExamId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

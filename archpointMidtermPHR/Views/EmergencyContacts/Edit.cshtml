@@ -1,0 +1,94 @@
+﻿@model archpointMidtermPHR.Models.EmergencyContact
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>EmergencyContact</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="EmergencyContactId" />
+            <div class="form-group">
+                <label asp-for="PrimaryOrSecondaryContact" class="control-label"></label>
+                <input asp-for="PrimaryOrSecondaryContact" class="form-control" />
+                <span asp-validation-for="PrimaryOrSecondaryContact" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmerContactFirstName" class="control-label"></label>
+                <input asp-for="EmerContactFirstName" class="form-control" />
+                <span asp-validation-for="EmerContactFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmerContactLastName" class="control-label"></label>
+                <input asp-for="EmerContactLastName" class="form-control" />
+                <span asp-validation-for="EmerContactLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RelationshipToPatient" class="control-label"></label>
+                <input asp-for="RelationshipToPatient" class="form-control" />
+                <span asp-validation-for="RelationshipToPatient" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmerContactDayPhone" class="control-label"></label>
+                <input asp-for="EmerContactDayPhone" class="form-control" />
+                <span asp-validation-for="EmerContactDayPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmerContactEveningPhone" class="control-label"></label>
+                <input asp-for="EmerContactEveningPhone" class="form-control" />
+                <span asp-validation-for="EmerContactEveningPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmerContactCellPhone" class="control-label"></label>
+                <input asp-for="EmerContactCellPhone" class="form-control" />
+                <span asp-validation-for="EmerContactCellPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmerContactEmail" class="control-label"></label>
+                <input asp-for="EmerContactEmail" class="form-control" />
+                <span asp-validation-for="EmerContactEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmerContactStreetAddress" class="control-label"></label>
+                <input asp-for="EmerContactStreetAddress" class="form-control" />
+                <span asp-validation-for="EmerContactStreetAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmerContactCity" class="control-label"></label>
+                <input asp-for="EmerContactCity" class="form-control" />
+                <span asp-validation-for="EmerContactCity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmerContactStateProvince" class="control-label"></label>
+                <input asp-for="EmerContactStateProvince" class="form-control" />
+                <span asp-validation-for="EmerContactStateProvince" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmerContactZip" class="control-label"></label>
+                <input asp-for="EmerContactZip" class="form-control" />
+                <span asp-validation-for="EmerContactZip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmerContactCountry" class="control-label"></label>
+                <input asp-for="EmerContactCountry" class="form-control" />
+                <span asp-validation-for="EmerContactCountry" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

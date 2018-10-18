@@ -1,0 +1,103 @@
+﻿@model archpointMidtermPHR.Models.DiabetesRisk
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>DiabetesRisk</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DateTaken" class="control-label"></label>
+                <input asp-for="DateTaken" class="form-control" />
+                <span asp-validation-for="DateTaken" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LevelBeforeBreakfast" class="control-label"></label>
+                <input asp-for="LevelBeforeBreakfast" class="form-control" />
+                <span asp-validation-for="LevelBeforeBreakfast" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LevelAfterBreakfast" class="control-label"></label>
+                <input asp-for="LevelAfterBreakfast" class="form-control" />
+                <span asp-validation-for="LevelAfterBreakfast" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LeverlBeforeLunch" class="control-label"></label>
+                <input asp-for="LeverlBeforeLunch" class="form-control" />
+                <span asp-validation-for="LeverlBeforeLunch" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LevelAfterLunch" class="control-label"></label>
+                <input asp-for="LevelAfterLunch" class="form-control" />
+                <span asp-validation-for="LevelAfterLunch" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LevelBeforeDinner" class="control-label"></label>
+                <input asp-for="LevelBeforeDinner" class="form-control" />
+                <span asp-validation-for="LevelBeforeDinner" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LevelAfterDinner" class="control-label"></label>
+                <input asp-for="LevelAfterDinner" class="form-control" />
+                <span asp-validation-for="LevelAfterDinner" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LevelAtBedtime" class="control-label"></label>
+                <input asp-for="LevelAtBedtime" class="form-control" />
+                <span asp-validation-for="LevelAtBedtime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Medications" class="control-label"></label>
+                <input asp-for="Medications" class="form-control" />
+                <span asp-validation-for="Medications" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TargertGlucoseBeforeMealLow" class="control-label"></label>
+                <input asp-for="TargertGlucoseBeforeMealLow" class="form-control" />
+                <span asp-validation-for="TargertGlucoseBeforeMealLow" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TargetGlucoseAfterMealHigh" class="control-label"></label>
+                <input asp-for="TargetGlucoseAfterMealHigh" class="form-control" />
+                <span asp-validation-for="TargetGlucoseAfterMealHigh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TargetGlucoseRangeAfterMealLow" class="control-label"></label>
+                <input asp-for="TargetGlucoseRangeAfterMealLow" class="form-control" />
+                <span asp-validation-for="TargetGlucoseRangeAfterMealLow" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TargetGlucoseRangeAfterMealHigh" class="control-label"></label>
+                <input asp-for="TargetGlucoseRangeAfterMealHigh" class="form-control" />
+                <span asp-validation-for="TargetGlucoseRangeAfterMealHigh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateSpan" class="control-label"></label>
+                <input asp-for="DateSpan" class="form-control" />
+                <span asp-validation-for="DateSpan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <input asp-for="Comments" class="form-control" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,89 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.AsthmaRisk>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AsthmaHospitalization)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AsthmaHospitalizationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AsthmaIcu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IcuAdmitDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AsthmaTriggers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AsthmaSymptoms)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AsthmaSeverity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedicationForAsthma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedicationName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comments)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AsthmaHospitalization)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AsthmaHospitalizationDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AsthmaIcu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IcuAdmitDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AsthmaTriggers)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AsthmaSymptoms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AsthmaSeverity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedicationForAsthma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedicationName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AsthmaRiskId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AsthmaRiskId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AsthmaRiskId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

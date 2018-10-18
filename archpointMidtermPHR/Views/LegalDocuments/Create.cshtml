@@ -1,0 +1,168 @@
+﻿@model archpointMidtermPHR.Models.LegalDocuments
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>LegalDocuments</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="LivingWill" class="control-label"></label>
+                <input asp-for="LivingWill" class="form-control" />
+                <span asp-validation-for="LivingWill" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LivingWillDateSigned" class="control-label"></label>
+                <input asp-for="LivingWillDateSigned" class="form-control" />
+                <span asp-validation-for="LivingWillDateSigned" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LivingWillLastUpdated" class="control-label"></label>
+                <input asp-for="LivingWillLastUpdated" class="form-control" />
+                <span asp-validation-for="LivingWillLastUpdated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LivingWillCopyOnFile" class="control-label"></label>
+                <input asp-for="LivingWillCopyOnFile" class="form-control" />
+                <span asp-validation-for="LivingWillCopyOnFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FamilyAwareOfInstructions" class="control-label"></label>
+                <input asp-for="FamilyAwareOfInstructions" class="form-control" />
+                <span asp-validation-for="FamilyAwareOfInstructions" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MedicalPowerOfAttorney" class="control-label"></label>
+                <input asp-for="MedicalPowerOfAttorney" class="form-control" />
+                <span asp-validation-for="MedicalPowerOfAttorney" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MedPowerOfAttorneyName" class="control-label"></label>
+                <input asp-for="MedPowerOfAttorneyName" class="form-control" />
+                <span asp-validation-for="MedPowerOfAttorneyName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MedPowerOfAttorneyDateSigned" class="control-label"></label>
+                <input asp-for="MedPowerOfAttorneyDateSigned" class="form-control" />
+                <span asp-validation-for="MedPowerOfAttorneyDateSigned" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MedPowerOfAttorneyDateLastUpdated" class="control-label"></label>
+                <input asp-for="MedPowerOfAttorneyDateLastUpdated" class="form-control" />
+                <span asp-validation-for="MedPowerOfAttorneyDateLastUpdated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MedPowerOfAttorneyCopyOnFile" class="control-label"></label>
+                <input asp-for="MedPowerOfAttorneyCopyOnFile" class="form-control" />
+                <span asp-validation-for="MedPowerOfAttorneyCopyOnFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HealthCareProxy" class="control-label"></label>
+                <input asp-for="HealthCareProxy" class="form-control" />
+                <span asp-validation-for="HealthCareProxy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HealthCareProxyName" class="control-label"></label>
+                <input asp-for="HealthCareProxyName" class="form-control" />
+                <span asp-validation-for="HealthCareProxyName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HealthCareProxyDateSigned" class="control-label"></label>
+                <input asp-for="HealthCareProxyDateSigned" class="form-control" />
+                <span asp-validation-for="HealthCareProxyDateSigned" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HealtchCareProxyDateLastUpdated" class="control-label"></label>
+                <input asp-for="HealtchCareProxyDateLastUpdated" class="form-control" />
+                <span asp-validation-for="HealtchCareProxyDateLastUpdated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoNotResuscitateOrder" class="control-label"></label>
+                <input asp-for="DoNotResuscitateOrder" class="form-control" />
+                <span asp-validation-for="DoNotResuscitateOrder" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DnrDateSigned" class="control-label"></label>
+                <input asp-for="DnrDateSigned" class="form-control" />
+                <span asp-validation-for="DnrDateSigned" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DnrDateLastUpdated" class="control-label"></label>
+                <input asp-for="DnrDateLastUpdated" class="form-control" />
+                <span asp-validation-for="DnrDateLastUpdated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrganDonorDocument" class="control-label"></label>
+                <input asp-for="OrganDonorDocument" class="form-control" />
+                <span asp-validation-for="OrganDonorDocument" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrganDonorDateSigned" class="control-label"></label>
+                <input asp-for="OrganDonorDateSigned" class="form-control" />
+                <span asp-validation-for="OrganDonorDateSigned" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrganDonorLastUpdate" class="control-label"></label>
+                <input asp-for="OrganDonorLastUpdate" class="form-control" />
+                <span asp-validation-for="OrganDonorLastUpdate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DocumentsLocation" class="control-label"></label>
+                <input asp-for="DocumentsLocation" class="form-control" />
+                <span asp-validation-for="DocumentsLocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DocumentContactsFirstName" class="control-label"></label>
+                <input asp-for="DocumentContactsFirstName" class="form-control" />
+                <span asp-validation-for="DocumentContactsFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DocumentContactsLastName" class="control-label"></label>
+                <input asp-for="DocumentContactsLastName" class="form-control" />
+                <span asp-validation-for="DocumentContactsLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DocumentContactsPhone" class="control-label"></label>
+                <input asp-for="DocumentContactsPhone" class="form-control" />
+                <span asp-validation-for="DocumentContactsPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AttorneyFirstName" class="control-label"></label>
+                <input asp-for="AttorneyFirstName" class="form-control" />
+                <span asp-validation-for="AttorneyFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AttorneyLastName" class="control-label"></label>
+                <input asp-for="AttorneyLastName" class="form-control" />
+                <span asp-validation-for="AttorneyLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AttorneyPhone" class="control-label"></label>
+                <input asp-for="AttorneyPhone" class="form-control" />
+                <span asp-validation-for="AttorneyPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <input asp-for="Comments" class="form-control" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

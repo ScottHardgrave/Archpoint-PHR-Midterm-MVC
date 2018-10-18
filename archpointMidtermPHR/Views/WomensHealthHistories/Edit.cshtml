@@ -1,0 +1,199 @@
+﻿@model archpointMidtermPHR.Models.WomensHealthHistory
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>WomensHealthHistory</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="WomensHealthHistoryId" />
+            <div class="form-group">
+                <label asp-for="MedCareProviderId" class="control-label"></label>
+                <select asp-for="MedCareProviderId" class="form-control" asp-items="ViewBag.MedCareProviderId"></select>
+                <span asp-validation-for="MedCareProviderId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateLastClinicialBreastExam" class="control-label"></label>
+                <input asp-for="DateLastClinicialBreastExam" class="form-control" />
+                <span asp-validation-for="DateLastClinicialBreastExam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResultsLastBreastExam" class="control-label"></label>
+                <input asp-for="ResultsLastBreastExam" class="form-control" />
+                <span asp-validation-for="ResultsLastBreastExam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateNextBreastExam" class="control-label"></label>
+                <input asp-for="DateNextBreastExam" class="form-control" />
+                <span asp-validation-for="DateNextBreastExam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateLastMammogram" class="control-label"></label>
+                <input asp-for="DateLastMammogram" class="form-control" />
+                <span asp-validation-for="DateLastMammogram" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResultsLastMammogram" class="control-label"></label>
+                <input asp-for="ResultsLastMammogram" class="form-control" />
+                <span asp-validation-for="ResultsLastMammogram" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateNextMammogram" class="control-label"></label>
+                <input asp-for="DateNextMammogram" class="form-control" />
+                <span asp-validation-for="DateNextMammogram" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateLastPapExam" class="control-label"></label>
+                <input asp-for="DateLastPapExam" class="form-control" />
+                <span asp-validation-for="DateLastPapExam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResultsLastPapExam" class="control-label"></label>
+                <input asp-for="ResultsLastPapExam" class="form-control" />
+                <span asp-validation-for="ResultsLastPapExam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateNextPapExam" class="control-label"></label>
+                <input asp-for="DateNextPapExam" class="form-control" />
+                <span asp-validation-for="DateNextPapExam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WomensDiseaseDisorder" class="control-label"></label>
+                <input asp-for="WomensDiseaseDisorder" class="form-control" />
+                <span asp-validation-for="WomensDiseaseDisorder" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfDiagnosis" class="control-label"></label>
+                <input asp-for="DateOfDiagnosis" class="form-control" />
+                <span asp-validation-for="DateOfDiagnosis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WomensDiseaseDisorderStatus" class="control-label"></label>
+                <input asp-for="WomensDiseaseDisorderStatus" class="form-control" />
+                <span asp-validation-for="WomensDiseaseDisorderStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateResolved" class="control-label"></label>
+                <input asp-for="DateResolved" class="form-control" />
+                <span asp-validation-for="DateResolved" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WomensHealthSurgeryProcedure" class="control-label"></label>
+                <input asp-for="WomensHealthSurgeryProcedure" class="form-control" />
+                <span asp-validation-for="WomensHealthSurgeryProcedure" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfSurgeryProcedure" class="control-label"></label>
+                <input asp-for="DateOfSurgeryProcedure" class="form-control" />
+                <span asp-validation-for="DateOfSurgeryProcedure" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MedCareLocationId" class="control-label"></label>
+                <select asp-for="MedCareLocationId" class="form-control" asp-items="ViewBag.MedCareLocationId"></select>
+                <span asp-validation-for="MedCareLocationId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgePeriodsStarted" class="control-label"></label>
+                <input asp-for="AgePeriodsStarted" class="form-control" />
+                <span asp-validation-for="AgePeriodsStarted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PeriodsRegular" class="control-label"></label>
+                <input asp-for="PeriodsRegular" class="form-control" />
+                <span asp-validation-for="PeriodsRegular" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PeriodProblems" class="control-label"></label>
+                <input asp-for="PeriodProblems" class="form-control" />
+                <span asp-validation-for="PeriodProblems" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PeriodFlow" class="control-label"></label>
+                <input asp-for="PeriodFlow" class="form-control" />
+                <span asp-validation-for="PeriodFlow" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StillHavingPeriods" class="control-label"></label>
+                <input asp-for="StillHavingPeriods" class="form-control" />
+                <span asp-validation-for="StillHavingPeriods" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthControlMethod" class="control-label"></label>
+                <input asp-for="BirthControlMethod" class="form-control" />
+                <span asp-validation-for="BirthControlMethod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HormoneReplacementTherapy" class="control-label"></label>
+                <input asp-for="HormoneReplacementTherapy" class="form-control" />
+                <span asp-validation-for="HormoneReplacementTherapy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HrtDateStarted" class="control-label"></label>
+                <input asp-for="HrtDateStarted" class="form-control" />
+                <span asp-validation-for="HrtDateStarted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HrtDateStopped" class="control-label"></label>
+                <input asp-for="HrtDateStopped" class="form-control" />
+                <span asp-validation-for="HrtDateStopped" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumOfPregnancies" class="control-label"></label>
+                <input asp-for="NumOfPregnancies" class="form-control" />
+                <span asp-validation-for="NumOfPregnancies" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumOfLiveBirths" class="control-label"></label>
+                <input asp-for="NumOfLiveBirths" class="form-control" />
+                <span asp-validation-for="NumOfLiveBirths" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumOfPrematureBirths" class="control-label"></label>
+                <input asp-for="NumOfPrematureBirths" class="form-control" />
+                <span asp-validation-for="NumOfPrematureBirths" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumOfStillBirths" class="control-label"></label>
+                <input asp-for="NumOfStillBirths" class="form-control" />
+                <span asp-validation-for="NumOfStillBirths" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumOfMiscarriages" class="control-label"></label>
+                <input asp-for="NumOfMiscarriages" class="form-control" />
+                <span asp-validation-for="NumOfMiscarriages" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumOfCsections" class="control-label"></label>
+                <input asp-for="NumOfCsections" class="form-control" />
+                <span asp-validation-for="NumOfCsections" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumOfElectiveAbortions" class="control-label"></label>
+                <input asp-for="NumOfElectiveAbortions" class="form-control" />
+                <span asp-validation-for="NumOfElectiveAbortions" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PregnancyComplications" class="control-label"></label>
+                <input asp-for="PregnancyComplications" class="form-control" />
+                <span asp-validation-for="PregnancyComplications" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,78 @@
+﻿@model archpointMidtermPHR.Models.AsthmaRisk
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>AsthmaRisk</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AsthmaHospitalization" class="control-label"></label>
+                <input asp-for="AsthmaHospitalization" class="form-control" />
+                <span asp-validation-for="AsthmaHospitalization" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AsthmaHospitalizationDate" class="control-label"></label>
+                <input asp-for="AsthmaHospitalizationDate" class="form-control" />
+                <span asp-validation-for="AsthmaHospitalizationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AsthmaIcu" class="control-label"></label>
+                <input asp-for="AsthmaIcu" class="form-control" />
+                <span asp-validation-for="AsthmaIcu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IcuAdmitDate" class="control-label"></label>
+                <input asp-for="IcuAdmitDate" class="form-control" />
+                <span asp-validation-for="IcuAdmitDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AsthmaTriggers" class="control-label"></label>
+                <input asp-for="AsthmaTriggers" class="form-control" />
+                <span asp-validation-for="AsthmaTriggers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AsthmaSymptoms" class="control-label"></label>
+                <input asp-for="AsthmaSymptoms" class="form-control" />
+                <span asp-validation-for="AsthmaSymptoms" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AsthmaSeverity" class="control-label"></label>
+                <input asp-for="AsthmaSeverity" class="form-control" />
+                <span asp-validation-for="AsthmaSeverity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MedicationForAsthma" class="control-label"></label>
+                <input asp-for="MedicationForAsthma" class="form-control" />
+                <span asp-validation-for="MedicationForAsthma" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MedicationName" class="control-label"></label>
+                <input asp-for="MedicationName" class="form-control" />
+                <span asp-validation-for="MedicationName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <input asp-for="Comments" class="form-control" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

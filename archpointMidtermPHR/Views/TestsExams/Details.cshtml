@@ -1,0 +1,48 @@
+﻿@model archpointMidtermPHR.Models.TestsExams
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TestsExams</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TestExamType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TestExamType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TestExamResult)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TestExamResult)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfTestExam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateOfTestExam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ReaonForTestExam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReaonForTestExam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedCareLocation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedCareLocation.LocationCity)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.TestExamId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

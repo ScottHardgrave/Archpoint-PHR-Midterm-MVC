@@ -1,0 +1,65 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.EmployerInfo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployerAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployerCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployerStateProvince)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployerZip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployerPhone)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployerAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployerCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployerStateProvince)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployerZip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployerPhone)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EmployerId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EmployerId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EmployerId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

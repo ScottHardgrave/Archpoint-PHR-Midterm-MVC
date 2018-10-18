@@ -1,0 +1,59 @@
+﻿@model archpointMidtermPHR.Models.EmployerInfo
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>EmployerInfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="EmployerId" />
+            <div class="form-group">
+                <label asp-for="EmployerName" class="control-label"></label>
+                <input asp-for="EmployerName" class="form-control" />
+                <span asp-validation-for="EmployerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmployerAddress" class="control-label"></label>
+                <input asp-for="EmployerAddress" class="form-control" />
+                <span asp-validation-for="EmployerAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmployerCity" class="control-label"></label>
+                <input asp-for="EmployerCity" class="form-control" />
+                <span asp-validation-for="EmployerCity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmployerStateProvince" class="control-label"></label>
+                <input asp-for="EmployerStateProvince" class="form-control" />
+                <span asp-validation-for="EmployerStateProvince" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmployerZip" class="control-label"></label>
+                <input asp-for="EmployerZip" class="form-control" />
+                <span asp-validation-for="EmployerZip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmployerPhone" class="control-label"></label>
+                <input asp-for="EmployerPhone" class="form-control" />
+                <span asp-validation-for="EmployerPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,66 @@
+﻿@model archpointMidtermPHR.Models.WeightAndMeasurementRisk
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>WeightAndMeasurementRisk</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTaken)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateTaken)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WeightGoal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WeightGoal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Height)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Bmi)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Bmi)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentWaistSize)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CurrentWaistSize)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WaistSizeGoal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WaistSizeGoal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.WeightMeasurementRiskId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

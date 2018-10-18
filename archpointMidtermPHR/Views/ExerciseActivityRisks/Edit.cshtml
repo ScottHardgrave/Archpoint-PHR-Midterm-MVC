@@ -1,0 +1,64 @@
+﻿@model archpointMidtermPHR.Models.ExerciseActivityRisk
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>ExerciseActivityRisk</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ExerciseRiskId" />
+            <div class="form-group">
+                <label asp-for="AnyExercise" class="control-label"></label>
+                <input asp-for="AnyExercise" class="form-control" />
+                <span asp-validation-for="AnyExercise" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeOfExercise" class="control-label"></label>
+                <input asp-for="TypeOfExercise" class="form-control" />
+                <span asp-validation-for="TypeOfExercise" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FrequencyOfExercise" class="control-label"></label>
+                <input asp-for="FrequencyOfExercise" class="form-control" />
+                <span asp-validation-for="FrequencyOfExercise" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DurationOfExercise" class="control-label"></label>
+                <input asp-for="DurationOfExercise" class="form-control" />
+                <span asp-validation-for="DurationOfExercise" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IntensityLevel" class="control-label"></label>
+                <input asp-for="IntensityLevel" class="form-control" />
+                <span asp-validation-for="IntensityLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DurationGoal" class="control-label"></label>
+                <input asp-for="DurationGoal" class="form-control" />
+                <span asp-validation-for="DurationGoal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <input asp-for="Comments" class="form-control" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

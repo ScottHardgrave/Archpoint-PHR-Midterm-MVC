@@ -1,0 +1,73 @@
+﻿@model archpointMidtermPHR.Models.MedCareLocation
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>MedCareLocation</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="LocationStreetAddress" class="control-label"></label>
+                <input asp-for="LocationStreetAddress" class="form-control" />
+                <span asp-validation-for="LocationStreetAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LocationCity" class="control-label"></label>
+                <input asp-for="LocationCity" class="form-control" />
+                <span asp-validation-for="LocationCity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LocationStateProvince" class="control-label"></label>
+                <input asp-for="LocationStateProvince" class="form-control" />
+                <span asp-validation-for="LocationStateProvince" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LocationZipCode" class="control-label"></label>
+                <input asp-for="LocationZipCode" class="form-control" />
+                <span asp-validation-for="LocationZipCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LocationCountry" class="control-label"></label>
+                <input asp-for="LocationCountry" class="form-control" />
+                <span asp-validation-for="LocationCountry" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LocationPhoneNum" class="control-label"></label>
+                <input asp-for="LocationPhoneNum" class="form-control" />
+                <span asp-validation-for="LocationPhoneNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LocationFax" class="control-label"></label>
+                <input asp-for="LocationFax" class="form-control" />
+                <span asp-validation-for="LocationFax" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LocationEmail" class="control-label"></label>
+                <input asp-for="LocationEmail" class="form-control" />
+                <span asp-validation-for="LocationEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LocationName" class="control-label"></label>
+                <input asp-for="LocationName" class="form-control" />
+                <span asp-validation-for="LocationName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

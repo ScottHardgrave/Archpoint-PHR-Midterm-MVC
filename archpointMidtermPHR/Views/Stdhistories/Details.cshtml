@@ -1,0 +1,54 @@
+﻿@model archpointMidtermPHR.Models.Stdhistory
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Stdhistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StdType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StdType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StdDateOfDiagnosis)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StdDateOfDiagnosis)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StdStatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StdStatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StdDateResolved)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StdDateResolved)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StdMedication)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StdMedication)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.StdHistoryId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,54 @@
+﻿@model archpointMidtermPHR.Models.SmokingHistoryRisk
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>SmokingHistoryRisk</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SmokingHistRiskId" />
+            <div class="form-group">
+                <label asp-for="Smoker" class="control-label"></label>
+                <input asp-for="Smoker" class="form-control" />
+                <span asp-validation-for="Smoker" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgeStarted" class="control-label"></label>
+                <input asp-for="AgeStarted" class="form-control" />
+                <span asp-validation-for="AgeStarted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgeQuit" class="control-label"></label>
+                <input asp-for="AgeQuit" class="form-control" />
+                <span asp-validation-for="AgeQuit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChewingSmokelessTobacco" class="control-label"></label>
+                <input asp-for="ChewingSmokelessTobacco" class="form-control" />
+                <span asp-validation-for="ChewingSmokelessTobacco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuittingGoal" class="control-label"></label>
+                <input asp-for="QuittingGoal" class="form-control" />
+                <span asp-validation-for="QuittingGoal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,72 @@
+﻿@model archpointMidtermPHR.Models.MedCareLocation
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MedCareLocation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationStreetAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LocationStreetAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationCity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LocationCity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationStateProvince)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LocationStateProvince)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationZipCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LocationZipCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationCountry)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LocationCountry)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationPhoneNum)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LocationPhoneNum)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationFax)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LocationFax)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationEmail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LocationEmail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LocationName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.LocationId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

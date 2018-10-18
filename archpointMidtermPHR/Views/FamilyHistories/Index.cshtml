@@ -1,0 +1,83 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.FamilyHistory>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FamilyMemberType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FamilyMemberFirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FamilyMemberLastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiseaseDisorder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LivingOrDeceased)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgeAtOnset)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgeAtDeath)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConditionCauseOfDeath)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comments)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FamilyMemberType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FamilyMemberFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FamilyMemberLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiseaseDisorder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LivingOrDeceased)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgeAtOnset)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgeAtDeath)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConditionCauseOfDeath)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FamilyMemberId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FamilyMemberId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FamilyMemberId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

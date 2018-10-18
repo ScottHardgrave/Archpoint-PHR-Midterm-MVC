@@ -1,0 +1,74 @@
+﻿@model archpointMidtermPHR.Models.AllergyHistory
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>AllergyHistory</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AllergyHistoryId" />
+            <div class="form-group">
+                <label asp-for="DrugAllergen" class="control-label"></label>
+                <input asp-for="DrugAllergen" class="form-control" />
+                <span asp-validation-for="DrugAllergen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactAllergen" class="control-label"></label>
+                <input asp-for="ContactAllergen" class="form-control" />
+                <span asp-validation-for="ContactAllergen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InsectStingBites" class="control-label"></label>
+                <input asp-for="InsectStingBites" class="form-control" />
+                <span asp-validation-for="InsectStingBites" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AirborneInhaledAllergen" class="control-label"></label>
+                <input asp-for="AirborneInhaledAllergen" class="form-control" />
+                <span asp-validation-for="AirborneInhaledAllergen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeOfReaction" class="control-label"></label>
+                <input asp-for="TypeOfReaction" class="form-control" />
+                <span asp-validation-for="TypeOfReaction" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Severity" class="control-label"></label>
+                <input asp-for="Severity" class="form-control" />
+                <span asp-validation-for="Severity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Symptoms" class="control-label"></label>
+                <input asp-for="Symptoms" class="form-control" />
+                <span asp-validation-for="Symptoms" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MedTreatmentRequired" class="control-label"></label>
+                <input asp-for="MedTreatmentRequired" class="form-control" />
+                <span asp-validation-for="MedTreatmentRequired" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <input asp-for="Comments" class="form-control" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

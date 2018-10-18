@@ -1,0 +1,51 @@
+﻿@model archpointMidtermPHR.Models.Immunizations
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Immunizations</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ImmunizationType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ImmunizationType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateReceived)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateReceived)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AdministeredBy)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AdministeredBy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLastTetanus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateLastTetanus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ImmunizationId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

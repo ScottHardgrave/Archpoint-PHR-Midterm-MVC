@@ -1,0 +1,72 @@
+﻿@model archpointMidtermPHR.Models.BloodPressureRisk
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BloodPressureRisk</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateDateEntered)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateDateEntered)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SystolicPressure)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SystolicPressure)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DiastolicPressure)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DiastolicPressure)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PulseRate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PulseRate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTaken)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateTaken)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeTaken)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TimeTaken)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SystolicBpgoal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SystolicBpgoal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DiastolicBpgoal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DiastolicBpgoal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.BloodPressureRiskId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

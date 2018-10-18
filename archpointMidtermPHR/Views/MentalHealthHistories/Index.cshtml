@@ -1,0 +1,77 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.MentalHealthHistory>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentTreatmentForMentalDisorder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedCareLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypeOfTreatment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TreatedInThePast)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MentalCondDisorder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentMedication)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comments)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedProvider)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentTreatmentForMentalDisorder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedCareLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypeOfTreatment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TreatedInThePast)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MentalCondDisorder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentMedication)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedProvider.ActiveOrInactive)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MentalHealthHistoryId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MentalHealthHistoryId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MentalHealthHistoryId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,53 @@
+﻿@model archpointMidtermPHR.Models.TravelHealth
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>TravelHealth</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CountryVisited" class="control-label"></label>
+                <input asp-for="CountryVisited" class="form-control" />
+                <span asp-validation-for="CountryVisited" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateVisited" class="control-label"></label>
+                <input asp-for="DateVisited" class="form-control" />
+                <span asp-validation-for="DateVisited" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiseaseIllnessContracted" class="control-label"></label>
+                <input asp-for="DiseaseIllnessContracted" class="form-control" />
+                <span asp-validation-for="DiseaseIllnessContracted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateContracted" class="control-label"></label>
+                <input asp-for="DateContracted" class="form-control" />
+                <span asp-validation-for="DateContracted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <input asp-for="Comments" class="form-control" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

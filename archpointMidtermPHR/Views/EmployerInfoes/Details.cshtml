@@ -1,0 +1,54 @@
+﻿@model archpointMidtermPHR.Models.EmployerInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EmployerInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployerName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmployerName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployerAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmployerAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployerCity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmployerCity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployerStateProvince)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmployerStateProvince)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployerZip)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmployerZip)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployerPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmployerPhone)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.EmployerId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

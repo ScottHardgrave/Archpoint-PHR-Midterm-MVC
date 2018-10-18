@@ -1,0 +1,83 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.AllergyHistory>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DrugAllergen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactAllergen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsectStingBites)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AirborneInhaledAllergen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypeOfReaction)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Severity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Symptoms)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedTreatmentRequired)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comments)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DrugAllergen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactAllergen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsectStingBites)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AirborneInhaledAllergen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypeOfReaction)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Severity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Symptoms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedTreatmentRequired)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AllergyHistoryId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AllergyHistoryId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AllergyHistoryId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

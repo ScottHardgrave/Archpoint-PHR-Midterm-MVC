@@ -1,0 +1,78 @@
+﻿@model archpointMidtermPHR.Models.AlcoholRiskId
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>AlcoholRiskId</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DrinkAlc" class="control-label"></label>
+                <input asp-for="DrinkAlc" class="form-control" />
+                <span asp-validation-for="DrinkAlc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DailyDrinkCount" class="control-label"></label>
+                <input asp-for="DailyDrinkCount" class="form-control" />
+                <span asp-validation-for="DailyDrinkCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WeekendDrinkCount" class="control-label"></label>
+                <input asp-for="WeekendDrinkCount" class="form-control" />
+                <span asp-validation-for="WeekendDrinkCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SocialDrinkCount" class="control-label"></label>
+                <input asp-for="SocialDrinkCount" class="form-control" />
+                <span asp-validation-for="SocialDrinkCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearsQuitDrinking" class="control-label"></label>
+                <input asp-for="YearsQuitDrinking" class="form-control" />
+                <span asp-validation-for="YearsQuitDrinking" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TreatedForAlcAbuse" class="control-label"></label>
+                <input asp-for="TreatedForAlcAbuse" class="form-control" />
+                <span asp-validation-for="TreatedForAlcAbuse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearTreated" class="control-label"></label>
+                <input asp-for="YearTreated" class="form-control" />
+                <span asp-validation-for="YearTreated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LengthOfTreatment" class="control-label"></label>
+                <input asp-for="LengthOfTreatment" class="form-control" />
+                <span asp-validation-for="LengthOfTreatment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeOfTreatment" class="control-label"></label>
+                <input asp-for="TypeOfTreatment" class="form-control" />
+                <span asp-validation-for="TypeOfTreatment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <input asp-for="Comments" class="form-control" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

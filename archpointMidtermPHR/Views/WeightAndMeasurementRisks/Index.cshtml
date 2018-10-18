@@ -1,0 +1,77 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.WeightAndMeasurementRisk>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateTaken)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WeightGoal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Height)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bmi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentWaistSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WaistSizeGoal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comments)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTaken)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WeightGoal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Height)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bmi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentWaistSize)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WaistSizeGoal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.WeightMeasurementRiskId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.WeightMeasurementRiskId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.WeightMeasurementRiskId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

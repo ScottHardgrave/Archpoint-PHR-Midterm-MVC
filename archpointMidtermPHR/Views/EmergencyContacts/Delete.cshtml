@@ -1,0 +1,99 @@
+﻿@model archpointMidtermPHR.Models.EmergencyContact
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>EmergencyContact</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimaryOrSecondaryContact)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrimaryOrSecondaryContact)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactFirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactFirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactLastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactLastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RelationshipToPatient)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RelationshipToPatient)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactDayPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactDayPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactEveningPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactEveningPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactCellPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactCellPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactEmail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactEmail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactStreetAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactStreetAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactCity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactCity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactStateProvince)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactStateProvince)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactZip)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactZip)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmerContactCountry)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmerContactCountry)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="EmergencyContactId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

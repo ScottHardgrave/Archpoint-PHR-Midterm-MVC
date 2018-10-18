@@ -1,0 +1,51 @@
+﻿@model archpointMidtermPHR.Models.TravelHealth
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TravelHealth</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CountryVisited)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CountryVisited)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateVisited)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateVisited)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DiseaseIllnessContracted)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DiseaseIllnessContracted)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateContracted)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateContracted)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="TravelHealthId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

@@ -1,0 +1,54 @@
+﻿@model archpointMidtermPHR.Models.Immunizations
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Immunizations</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ImmunizationId" />
+            <div class="form-group">
+                <label asp-for="ImmunizationType" class="control-label"></label>
+                <input asp-for="ImmunizationType" class="form-control" />
+                <span asp-validation-for="ImmunizationType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateReceived" class="control-label"></label>
+                <input asp-for="DateReceived" class="form-control" />
+                <span asp-validation-for="DateReceived" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdministeredBy" class="control-label"></label>
+                <input asp-for="AdministeredBy" class="form-control" />
+                <span asp-validation-for="AdministeredBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateLastTetanus" class="control-label"></label>
+                <input asp-for="DateLastTetanus" class="form-control" />
+                <span asp-validation-for="DateLastTetanus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <input asp-for="Comments" class="form-control" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

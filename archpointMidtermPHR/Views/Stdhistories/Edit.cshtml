@@ -1,0 +1,59 @@
+﻿@model archpointMidtermPHR.Models.Stdhistory
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Stdhistory</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="StdHistoryId" />
+            <div class="form-group">
+                <label asp-for="StdType" class="control-label"></label>
+                <input asp-for="StdType" class="form-control" />
+                <span asp-validation-for="StdType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StdDateOfDiagnosis" class="control-label"></label>
+                <input asp-for="StdDateOfDiagnosis" class="form-control" />
+                <span asp-validation-for="StdDateOfDiagnosis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StdStatus" class="control-label"></label>
+                <input asp-for="StdStatus" class="form-control" />
+                <span asp-validation-for="StdStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StdDateResolved" class="control-label"></label>
+                <input asp-for="StdDateResolved" class="form-control" />
+                <span asp-validation-for="StdDateResolved" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StdMedication" class="control-label"></label>
+                <input asp-for="StdMedication" class="form-control" />
+                <span asp-validation-for="StdMedication" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <input asp-for="Comments" class="form-control" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

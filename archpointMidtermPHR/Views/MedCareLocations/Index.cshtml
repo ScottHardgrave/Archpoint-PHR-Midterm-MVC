@@ -1,0 +1,83 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.MedCareLocation>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LocationStreetAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocationCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocationStateProvince)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocationZipCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocationCountry)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocationPhoneNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocationFax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocationEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocationName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationStreetAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationStateProvince)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationZipCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationCountry)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationPhoneNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationFax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.LocationId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.LocationId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.LocationId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

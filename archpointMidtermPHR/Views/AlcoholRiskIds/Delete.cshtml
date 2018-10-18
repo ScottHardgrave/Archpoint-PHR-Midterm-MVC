@@ -1,0 +1,81 @@
+﻿@model archpointMidtermPHR.Models.AlcoholRiskId
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>AlcoholRiskId</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DrinkAlc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DrinkAlc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DailyDrinkCount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DailyDrinkCount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WeekendDrinkCount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WeekendDrinkCount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SocialDrinkCount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SocialDrinkCount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.YearsQuitDrinking)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.YearsQuitDrinking)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TreatedForAlcAbuse)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TreatedForAlcAbuse)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.YearTreated)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.YearTreated)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LengthOfTreatment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LengthOfTreatment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeOfTreatment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TypeOfTreatment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="AlcoholUseRiskId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

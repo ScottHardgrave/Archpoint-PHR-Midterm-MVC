@@ -1,0 +1,72 @@
+﻿@model archpointMidtermPHR.Models.FamilyHistory
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FamilyHistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FamilyMemberType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FamilyMemberType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FamilyMemberFirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FamilyMemberFirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FamilyMemberLastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FamilyMemberLastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DiseaseDisorder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DiseaseDisorder)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LivingOrDeceased)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LivingOrDeceased)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AgeAtOnset)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AgeAtOnset)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AgeAtDeath)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AgeAtDeath)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ConditionCauseOfDeath)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ConditionCauseOfDeath)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.FamilyMemberId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

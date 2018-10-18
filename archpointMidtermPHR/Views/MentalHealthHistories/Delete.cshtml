@@ -1,0 +1,69 @@
+﻿@model archpointMidtermPHR.Models.MentalHealthHistory
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>MentalHealthHistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentTreatmentForMentalDisorder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CurrentTreatmentForMentalDisorder)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedCareLocation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedCareLocation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeOfTreatment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TypeOfTreatment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TreatedInThePast)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TreatedInThePast)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MentalCondDisorder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MentalCondDisorder)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentMedication)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CurrentMedication)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedProvider)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedProvider.ActiveOrInactive)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MentalHealthHistoryId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

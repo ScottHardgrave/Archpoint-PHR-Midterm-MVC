@@ -1,0 +1,78 @@
+﻿@model archpointMidtermPHR.Models.AsthmaRisk
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AsthmaRisk</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AsthmaHospitalization)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AsthmaHospitalization)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AsthmaHospitalizationDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AsthmaHospitalizationDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AsthmaIcu)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AsthmaIcu)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IcuAdmitDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IcuAdmitDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AsthmaTriggers)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AsthmaTriggers)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AsthmaSymptoms)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AsthmaSymptoms)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AsthmaSeverity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AsthmaSeverity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedicationForAsthma)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedicationForAsthma)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedicationName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedicationName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.AsthmaRiskId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

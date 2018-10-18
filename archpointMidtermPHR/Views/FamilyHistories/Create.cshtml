@@ -1,0 +1,73 @@
+﻿@model archpointMidtermPHR.Models.FamilyHistory
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>FamilyHistory</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FamilyMemberType" class="control-label"></label>
+                <input asp-for="FamilyMemberType" class="form-control" />
+                <span asp-validation-for="FamilyMemberType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FamilyMemberFirstName" class="control-label"></label>
+                <input asp-for="FamilyMemberFirstName" class="form-control" />
+                <span asp-validation-for="FamilyMemberFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FamilyMemberLastName" class="control-label"></label>
+                <input asp-for="FamilyMemberLastName" class="form-control" />
+                <span asp-validation-for="FamilyMemberLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiseaseDisorder" class="control-label"></label>
+                <input asp-for="DiseaseDisorder" class="form-control" />
+                <span asp-validation-for="DiseaseDisorder" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LivingOrDeceased" class="control-label"></label>
+                <input asp-for="LivingOrDeceased" class="form-control" />
+                <span asp-validation-for="LivingOrDeceased" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgeAtOnset" class="control-label"></label>
+                <input asp-for="AgeAtOnset" class="form-control" />
+                <span asp-validation-for="AgeAtOnset" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgeAtDeath" class="control-label"></label>
+                <input asp-for="AgeAtDeath" class="form-control" />
+                <span asp-validation-for="AgeAtDeath" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConditionCauseOfDeath" class="control-label"></label>
+                <input asp-for="ConditionCauseOfDeath" class="form-control" />
+                <span asp-validation-for="ConditionCauseOfDeath" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <input asp-for="Comments" class="form-control" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

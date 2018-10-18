@@ -1,0 +1,65 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.Stdhistory>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StdType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StdDateOfDiagnosis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StdStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StdDateResolved)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StdMedication)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comments)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdDateOfDiagnosis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdDateResolved)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdMedication)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.StdHistoryId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.StdHistoryId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.StdHistoryId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

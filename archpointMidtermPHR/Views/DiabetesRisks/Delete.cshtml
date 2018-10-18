@@ -1,0 +1,111 @@
+﻿@model archpointMidtermPHR.Models.DiabetesRisk
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DiabetesRisk</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTaken)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateTaken)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LevelBeforeBreakfast)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LevelBeforeBreakfast)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LevelAfterBreakfast)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LevelAfterBreakfast)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LeverlBeforeLunch)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LeverlBeforeLunch)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LevelAfterLunch)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LevelAfterLunch)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LevelBeforeDinner)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LevelBeforeDinner)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LevelAfterDinner)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LevelAfterDinner)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LevelAtBedtime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LevelAtBedtime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Medications)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Medications)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TargertGlucoseBeforeMealLow)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TargertGlucoseBeforeMealLow)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TargetGlucoseAfterMealHigh)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TargetGlucoseAfterMealHigh)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TargetGlucoseRangeAfterMealLow)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TargetGlucoseRangeAfterMealLow)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TargetGlucoseRangeAfterMealHigh)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TargetGlucoseRangeAfterMealHigh)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateSpan)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateSpan)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="DiabetesRiskId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

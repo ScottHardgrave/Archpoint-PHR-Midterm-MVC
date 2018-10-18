@@ -1,0 +1,84 @@
+﻿@model archpointMidtermPHR.Models.CholesterolRisk
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CholesterolRisk</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCholTaken)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateCholTaken)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalCholesterol)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalCholesterol)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LdlCholesterol)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LdlCholesterol)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HdlCholesterol)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HdlCholesterol)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Triglycerides)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Triglycerides)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TakenAfterFasting)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TakenAfterFasting)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalCholGoal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalCholGoal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LdlCholGoal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LdlCholGoal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HdlCholGoal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HdlCholGoal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TriglycerideGoal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TriglycerideGoal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CholesterolRiskId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

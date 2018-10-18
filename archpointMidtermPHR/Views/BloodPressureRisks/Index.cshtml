@@ -1,0 +1,83 @@
+﻿@model IEnumerable<archpointMidtermPHR.Models.BloodPressureRisk>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DateDateEntered)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SystolicPressure)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiastolicPressure)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PulseRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateTaken)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TimeTaken)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SystolicBpgoal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiastolicBpgoal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comments)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateDateEntered)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SystolicPressure)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiastolicPressure)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PulseRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTaken)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeTaken)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SystolicBpgoal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiastolicBpgoal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BloodPressureRiskId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BloodPressureRiskId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BloodPressureRiskId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

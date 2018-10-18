@@ -1,0 +1,66 @@
+﻿@model archpointMidtermPHR.Models.MentalHealthHistory
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MentalHealthHistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentTreatmentForMentalDisorder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CurrentTreatmentForMentalDisorder)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedCareLocation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedCareLocation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeOfTreatment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TypeOfTreatment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TreatedInThePast)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TreatedInThePast)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MentalCondDisorder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MentalCondDisorder)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentMedication)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CurrentMedication)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedProvider)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedProvider.ActiveOrInactive)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.MentalHealthHistoryId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

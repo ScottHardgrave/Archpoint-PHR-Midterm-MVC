@@ -1,0 +1,186 @@
+﻿@model archpointMidtermPHR.Models.LegalDocuments
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LegalDocuments</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LivingWill)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LivingWill)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LivingWillDateSigned)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LivingWillDateSigned)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LivingWillLastUpdated)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LivingWillLastUpdated)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LivingWillCopyOnFile)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LivingWillCopyOnFile)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FamilyAwareOfInstructions)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FamilyAwareOfInstructions)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedicalPowerOfAttorney)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedicalPowerOfAttorney)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedPowerOfAttorneyName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedPowerOfAttorneyName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedPowerOfAttorneyDateSigned)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedPowerOfAttorneyDateSigned)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedPowerOfAttorneyDateLastUpdated)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedPowerOfAttorneyDateLastUpdated)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MedPowerOfAttorneyCopyOnFile)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MedPowerOfAttorneyCopyOnFile)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HealthCareProxy)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HealthCareProxy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HealthCareProxyName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HealthCareProxyName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HealthCareProxyDateSigned)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HealthCareProxyDateSigned)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HealtchCareProxyDateLastUpdated)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HealtchCareProxyDateLastUpdated)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DoNotResuscitateOrder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DoNotResuscitateOrder)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DnrDateSigned)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DnrDateSigned)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DnrDateLastUpdated)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DnrDateLastUpdated)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OrganDonorDocument)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OrganDonorDocument)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OrganDonorDateSigned)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OrganDonorDateSigned)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OrganDonorLastUpdate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OrganDonorLastUpdate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DocumentsLocation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DocumentsLocation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DocumentContactsFirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DocumentContactsFirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DocumentContactsLastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DocumentContactsLastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DocumentContactsPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DocumentContactsPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AttorneyFirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AttorneyFirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AttorneyLastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AttorneyLastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AttorneyPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AttorneyPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.LegalDocId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

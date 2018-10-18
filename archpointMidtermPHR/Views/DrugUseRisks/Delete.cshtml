@@ -1,0 +1,87 @@
+﻿@model archpointMidtermPHR.Models.DrugUseRisk
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DrugUseRisk</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RecreationalDrugUser)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RecreationalDrugUser)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FrequencyUsed)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FrequencyUsed)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.YearsUsed)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.YearsUsed)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.YearsQuit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.YearsQuit)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DrugsCausedLifeProblems)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DrugsCausedLifeProblems)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DrugsCausedProblemsExpl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DrugsCausedProblemsExpl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TreatedForDrugAbuse)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TreatedForDrugAbuse)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.YearTreated)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.YearTreated)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TreatmentLength)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TreatmentLength)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeOfTreatment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TypeOfTreatment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="DrugUseRiskId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
