@@ -26,13 +26,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">archpointMidtermPHR</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Archpoint PHR</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Users">User</a></li>
+                    <li><a asp-area="" asp-controller="EmergencyContacts">Emergency Contacts</a></li>
+                    <li><a asp-area="" asp-controller="MedicalProviders">Medical Care Providers</a></li>
+                    <li><a asp-area="" asp-controller="MedCareLocations">Medical Care Locations</a></li>
+                    <li><a asp-area="" asp-controller="LegalDocuments">LegalDocuments</a></li>
+                    <li><a asp-area="" asp-controller="Home">Log In/Out</a></li>
+
                 </ul>
             </div>
         </div>
@@ -44,7 +49,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - archpointMidtermPHR</p>
+            <p>&copy; 2018 - SunMark Archpoint PHR</p>
         </footer>
     </div>
 
